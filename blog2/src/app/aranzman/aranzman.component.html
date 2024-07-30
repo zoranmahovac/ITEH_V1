@@ -1,0 +1,59 @@
+<div class="card-container">
+
+    <div  class="card" 
+    [ngStyle]="{border: '1px solid blue'}"
+     *ngFor="let aranzman of aranzmani2"
+    
+    >
+        <div class="image">
+        <img src=" {{ aranzman.picture  }} " 
+        alt="Slika"
+        width="90%"
+        height="90%"
+        class="card-image"
+        >
+        </div>
+        <h1>{{ aranzman.description }}</h1>
+        <p>{{ aranzman.avg_price }} euro</p>
+     <!--   <p>Broj mesta: {{ aranzman.br_mesta }}</p> -->
+        <p>Datum: {{ aranzman.start_date }} - {{aranzman.end_date}}</p>
+        <p>Sezona: {{  aranzman.season }}</p>
+        <p>
+        <span>Slobodno mesta: {{ aranzman.description }} </span>
+        <button  
+        [ngClass]="{'classButtonClick' :buttonClick}" 
+        > rezervisi </button>
+    
+    <!--    <button  
+        [ngClass]="{'classButtonClick' :buttonClick}"
+        (click)="onRemoveFromCart(aranzman)"
+        
+        
+        > otkazi </button>
+        
+        (click)="onAddToCart(aranzman)"
+        -->
+    
+    
+        </p>
+        
+    </div>  
+    
+    <div class="pagination">
+        <button *ngFor="let page of pageNumbers" (click)="onPageChange2(page)">
+            {{page}}
+
+        </button>
+    </div>
+
+</div>
+
+<!-- 
+<mat-paginator [length]="lenght" [pageSize]="itemsPerPage" [pageSizeOptions]="[2, 5, 10, 25]" (page)="onPageChange($event)">
+</mat-paginator> 
+-->
+
+
+
+
+    

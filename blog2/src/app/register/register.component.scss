@@ -1,0 +1,76 @@
+body {
+  background-image: url('../../assets/images/aurora_borealis.jpg');
+  background-size: cover; /* Da bi se slika poklopila sa celom pozadinom */
+  background-position: center; /* Da bi se slika centrirala */
+  background-repeat: no-repeat; /* Da bi se slika samo jednom ponovila */
+
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+form {
+    margin: auto;
+    margin-top: 20%;
+}
+
+// styles.scss (ili nazovite po vašoj potrebi)
+
+// Definisanje varijabli za boje
+$light-blue: #6ab7ff;
+$lighter-blue: #a4d4ff;
+$dark-blue: #2979ff;
+$error-red: #f44336;
+
+// Stil za mat-form-field
+mat-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+  
+  // Stil za mat-label
+  mat-label {
+    color: $dark-blue; // Boja teksta labele
+  }
+
+  // Stil za mat-input
+  input.mat-input {
+    background-color: $lighter-blue; // Pozadinska boja input polja
+    border-radius: 5px; // Zaobljeni rubovi input polja
+    padding: 10px; // Prostor unutar input polja
+    font-size: 16px; // Veličina fonta
+    color: $dark-blue; // Boja teksta unutar input polja
+
+    // Stil za mat-error
+    .mat-error {
+      color: $error-red; // Boja teksta za greške
+      font-size: 12px; // Manja veličina fonta za greške
+      margin-top: 5px; // Margina iznad greške
+    }
+  }
+}
+
+// Stil za mat-stroked-button
+button.mat-stroked-button {
+  background-color: $light-blue; // Pozadinska boja dugmeta
+  color: white; // Boja teksta dugmeta
+  border-color: $light-blue; // Boja ivice dugmeta
+  border-radius: 5px; // Zaobljeni rubovi dugmeta
+  padding: 10px 20px; // Prostor unutar dugmeta
+  font-size: 16px; // Veličina fonta
+
+  // Hover efekat
+  &:hover {
+    background-color: $dark-blue; // Promena boje pozadine prilikom prelaska mišem
+    border-color: $dark-blue; // Promena boje ivice prilikom prelaska mišem
+  }
+}
+
+
+

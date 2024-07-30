@@ -1,0 +1,30 @@
+<div class="bg-color">
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="box" *ngFor="let slide of brosure">
+            <div class="profile">
+              <div class="profile-image" [style.backgroundImage]="'url(' + slide.picture + ')'">
+                <div class="overlay">
+                  <div class="cards">
+                    <div class="details">
+                      <h2><b>{{ slide.season }}</b></h2>
+                      <p><b>OD: {{ slide.start_date }}</b></p>
+                      <p><b>DO: {{ slide.end_date }}</b></p>
+                      <p><b>cene: {{ slide.avg_price }} euro</b></p>
+                      <div class="content">
+                        
+                        <p class="description">{{ slide.description }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

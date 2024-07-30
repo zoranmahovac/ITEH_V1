@@ -1,0 +1,113 @@
+.bg-color {
+    background-color: rgb(217, 241, 254); // #f2f2f2;
+    padding: 50px 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    border: 2px solid rgb(164, 164, 245);
+    width: calc(25% - 40px);
+    margin: 20px;
+    overflow: hidden;
+    background:  #fff;
+    border-radius: 20px;
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
+}
+
+.details h2::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80px;
+    background: rgb(164, 164, 245);
+    left: 0;
+    bottom: -8px;
+}
+
+.details p {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.content p {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.content p.description {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+}

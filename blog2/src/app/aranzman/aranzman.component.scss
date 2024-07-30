@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Align cards to the center horizontally */
+    gap: 20px; /* Space between each card */
+    padding: 20px; /* Padding around the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.card {
+    width: 400px; /* Set the width of each card */
+    max-width: calc(100vw - 40px); /* Maximum width based on viewport width */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #ffffff, #e6e6e6);
+    box-shadow: 10px 10px 20px #9c9c9c, -10px -10px 20px #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    overflow: hidden; /* Clip content that goes beyond border-radius */
+}
+
+.image {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+    overflow: hidden;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 30px; /* Rounded top-left corner */
+    border-top-right-radius: 30px; /* Rounded top-right corner */
+}
+
+.price {
+    color: black;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    margin-top: 12px;
+    color: white;
+    background-color: rgb(93, 181, 232);
+    
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+.classButtonClick {
+    border: 3 px solid red !important;
+}

@@ -1,0 +1,76 @@
+.about-us {
+    position: relative;
+    height: 100vh; 
+    padding: 80px ;
+    background: url('../../assets/images/about.jpg') center center/cover no-repeat; /* Postavljanje slike kao pozadine */
+    color: #ffffff; /* Bela boja teksta preko slike */
+  }
+
+  .adrese-container {
+    display: flex; /* Koristi Flexbox */
+    justify-content: center; /* Centriranje po horizontali */
+    align-items: center; 
+  
+}
+
+/*
+.slika_div {
+    margin-right: 20px; 
+  }*/
+  
+  .tekst_div {
+    flex: 1; 
+    color:black;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .tekst_div p {
+    margin: 0; /* Uklanja podrazumevani margin od <p> elementa */
+  }
+  
+  .adresa_content {
+    padding-left: 20px;
+  }
+
+ 
+
+  .adresa_div img {
+    max-width: 25%; /* Slika će biti maksimalne širine koja neće premašiti svoj originalni format */
+    height: auto; /* Automatski odnos visine prema širini */
+    display: block; /* Osigurava pravilan prikaz slike kao bloka */
+    margin-top: 10px; /* Opciono: dodaje malo prostora iznad slike */
+  }
+ 
+  
+  .about-us .container {
+    position: relative;
+    z-index: 1; /* Postavljanje teksta iznad slike */
+  }
+  
+  .about-us-text {
+    padding: 30px;
+    background-color: rgba(107, 156, 186, 0.6); /* Poluprozirna crna pozadina za tekst */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Senka za efekat dubine */
+  }
+
+  .adresa_div{
+    background-color:rgba(107, 156, 186, 0.6); 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase; /* Velika slova */
+    margin-bottom: 20px;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
